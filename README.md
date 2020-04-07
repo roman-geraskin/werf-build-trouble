@@ -1,0 +1,2 @@
+- type multiwerf && . $(multiwerf use 1.1 ea --as-file)
+- echo `date` >> config && tar --exclude=./.* -cf .config.tar . && werf build --stages-storage :local
